@@ -1,0 +1,13 @@
+﻿@model SampleApp.Models.ApplicationUser
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(x => x.UserName)<br/>
+    @Html.PasswordFor(x => x.Password)<br/>
+    <input type="submit" />
+}

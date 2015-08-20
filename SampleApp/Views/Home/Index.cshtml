@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (User.IsInRole("admin"))
+{
+    <p>ようこそ管理者様</p>
+}
+
+<p>@User.Identity.Name</p>
